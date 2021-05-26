@@ -31,9 +31,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portafolio</a></li>
+                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Aplicación</a></li>
                     <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Información</a></li>
-                    <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#proyecto">Proyecto</a></li>
                 </ul>
             </div>
         </div>
@@ -43,26 +42,111 @@
         <div class="row justify-content-center">
             <!-- Masthead Avatar Image-->
 
-            <img class="masthead-avatar mb-5" src="~/assets/img/avataaars.svg" alt="..." />
+            <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
             <!-- Masthead Heading-->
             <h1 class="masthead-heading text-uppercase mb-0">Azael de Jesús Nava Pérez</h1>
             <!-- Icon Divider-->
             <div class="divider-custom divider-light">
                 <div class="divider-custom-line"></div>
-                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
                 <div class="divider-custom-line"></div>
             </div>
             <!-- Masthead Subheading-->
-            <p class="masthead-subheading font-weight-light mb-0">Ingeniero administrador de sistemas</p>
+            <p class="masthead-subheading text-uppercase font-weight-light mb-0">Ingeniero administrador de sistemas</p>
             <p class="masthead-subheading font-weight-light mb-0">Especialidad: Ingenieria de Software</p>
             <p class="masthead-subheading font-weight-light mb-0">Matricula: 1245685</p>
+            <p class="masthead-subheading font-weight-light mb-0">Plan: 103</p>
+
 
         </div>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
+    <!-- Portfolio Section-->
+    <section class="page-section portfolio" id="portfolio">
+        <div class="container">
+            <!-- Portfolio Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Sistema de asistencia a clases</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="embed-container">
+                    <iframe src="https://proyectoprogrmacionajnp.azurewebsites.net/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section-->
+    <section class="page-section bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <!-- About Section Heading-->
+            <h2 class="page-section-heading text-center text-uppercase text-white">Información del proyecto</h2>
+            <!-- Icon Divider-->
+            <div class="divider-custom divider-light">
+                <div class="divider-custom-line"></div>
+                <div class="divider-custom-icon"><i class="fas fa-paw"></i></div>
+                <div class="divider-custom-line"></div>
+            </div>
+            <!-- About Section Content-->
+            <div class="row">
+                <p class="lead">Proyecto de programación que imparte la catedrática Ing. Karla Nathali Porras Vazquez, el cual se basa en la entrega de una base de datos con las operaciones de Crear, Editar, Eliminar y Ver ("CRUD" por sus siglas en Ingles), basado en una aplicación .Net Core 3.1 con un Modelo Vista Controlador (MVC5) y el uso de Entity Framework Core, se encuentra publicado en la plataforma de Azure a través de un App Service con una base de datos relacional que se aloja en un servidor de Azure SQL PaaS service.</p>
+            </div>
+            <div class="row justify-content-center">
+                <h4 class="page-section-subheading text-center text-uppercase text-white">Recursos utilizados en el proyecto.</h4>
+                <a class="btn btn-outline-light btn-social mx-2" href="https://docs.microsoft.com/en-us/aspnet/core/?view=aspnetcore-5.0"><i class="fab fa-windows"></i></a>
+                <a class="btn btn-outline-light btn-social mx-2" href="https://docs.microsoft.com/en-us/ef/"><i class="fas fa-microchip"></i></a>
+                <a class="btn btn-outline-light btn-social mx-2" href="https://docs.microsoft.com/es-mx/azure/azure-sql/"><i class="fas fa-database"></i></a>
+                <a class="btn btn-outline-light btn-social mx-2" href="https://docs.microsoft.com/en-us/aspnet/mvc/overview/getting-started/introduction/getting-started"><i class="fas fa-desktop"></i></a>
+                <a class="btn btn-outline-light btn-social mx-2" href="https://docs.microsoft.com/es-mx/azure/app-service/quickstart-dotnetcore?tabs=netframework48&pivots=development-environment-vs"><i class="fas fa-cloud"></i></a>
+            </div>
+
+            <!-- About Section Button-->
+            <div class="text-center mt-4">
+                <a class="btn btn-xl btn-outline-light" href="https://github.com/ajnavap27/ProyectoProgramacion">
+                    <i class="fas fa-download me-2"></i>
+                    Repositorio en GitHub.
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer text-center">
+        <div class="container">
+            <div class="row">
+                <!-- Footer Location-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Location</h4>
+                    <p class="lead mb-0">
+                        Monterrey, Nuevo León
+                        <br />
+                        México.
+                    </p>
+                </div>
+                <!-- Footer Social Icons-->
+                <div class="col-lg-4 mb-5 mb-lg-0">
+                    <h4 class="text-uppercase mb-4">Social</h4>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.facebook.com/AzaelNava"><i class="fab fa-fw fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://twitter.com/ajnavap"><i class="fab fa-fw fa-twitter"></i></a>
+                    <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/azaelnava/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                </div>
+                <!-- Footer About Text-->
+                <div class="col-lg-4">
+                    <h4 class="text-uppercase mb-4">¡Sobre mí!</h4>
+                    <p class="lead mb-0">
+                        Coordinador de desarrollo de plataformas en el Tec de Monterrey, <br>Ingeniero administrador de sistemas, con especialidad en Ingenieria de Software, basando mi carrera en la arquitectura de soluciones tecnológicas, amplio conocimiento de soluciones en la nube, además de manejo de prácticas agiles y estimación de proyectos.
+                        <br><a href="https://www.linkedin.com/in/azaelnava/detail/contact-info/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BYs8MGg8gRxa%2FogvUD1V33Q%3D%3D">Información de contacto</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Copyright Section-->
+    <div class="copyright py-4 text-center text-white">
+        <div class="container"><small>Copyright &copy; 2021</small></div>
     </div>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
